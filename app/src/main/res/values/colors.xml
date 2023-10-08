@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FE8C68</color>
+    <color name="colorPrimaryDark">#c75d3c</color>
+    <color name="colorAccent">#EAF9FF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorText">#474747</color>
+    <color name="colorGrey">#F4F4F4</color>
+    <color name="colorRed">#FF7171</color>
+    <color name="colorPurple">#7868E6</color>
+    <color name="colorGreyChannel">#B4B0B0</color>
+    <color name="colorDarkGrey">#797979</color>
+    <color name="colorBlue">#EAF9FF</color>
+    <color name="colorPrayText">#28527A</color>
+    <color name="colorYellow">#FFEFA1</color>
+</resources>
