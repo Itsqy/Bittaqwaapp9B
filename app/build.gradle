@@ -4,14 +4,18 @@ plugins {
     id 'kotlin-parcelize'
 }
 
+ext {
+    coreVersion = '10.0.5'
+}
+
 android {
     namespace 'com.syatria.bittaqwaapp'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.syatria.bittaqwaapp"
         minSdk 27
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -25,11 +29,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     buildFeatures{
         viewBinding = true
@@ -39,7 +43,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -47,9 +51,22 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+
     //glide
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
+    //    cottacush edittext
+    implementation 'com.cottacush:CurrencyEditText:0.0.10'
+
+    //    android yt player
+    implementation'com.pierfrancescosoffritti.androidyoutubeplayer:core:11.1.0'
+//    implementation "com.pierfrancescosoffritti.androidyoutubeplayer:core:$coreVersion"
+    // blur effect
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+    // If you want to use the GPU Filters
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+//        async http
+    implementation 'com.loopj.android:android-async-http:1.4.11'
 
 }

@@ -9,14 +9,13 @@ import com.syatria.bittaqwaapp.R
 import com.syatria.bittaqwaapp.databinding.ActivityDoaBinding
 
 class DoaActivity : AppCompatActivity() {
-
     //  penggunaan tools/ library binding 1
     private lateinit var binding: ActivityDoaBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        pneggunaan tools binding 2
+//      pneggunaan tools binding 2
         binding = ActivityDoaBinding.inflate(layoutInflater)
-//        penggunaan tools binding 3 ubah R.layout.activity_doa -> binding.root
+//       penggunaan tools binding 3 ubah R.layout.activity_doa -> binding.root
         setContentView(binding.root)
 
         binding.kategoriRumah.setOnClickListener {

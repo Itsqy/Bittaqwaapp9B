@@ -30,7 +30,8 @@ class DetailDoaActivity : AppCompatActivity() {
 
     }
 
-    // fungsi untuk tombol back
+
+    // fungsi untuk tombol Back
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> finish()
